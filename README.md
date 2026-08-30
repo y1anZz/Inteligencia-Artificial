@@ -22,7 +22,7 @@
 | 📋 | Estado | Asignación / Tema de la Tarea | Archivo |
 | :---: | :---: | :--- | :---: |
 | **01** | ✅ | **Aplicaciones de IA que uso o he usado** | [📁 Ver Tarea](https://github.com/y1anZz/Inteligencia-Artificial/blob/2ac7bdbb0cea505d7d27ec3ec1fcb2280c83205b/T1-IA-IPV.pdf) |
-| **02** | ✅ | **El Mundo de Wumpus** | [📁 Ver Tarea]([./Tareas/Tarea_02](https://github.com/y1anZz/Inteligencia-Artificial/tree/main/Ej_1-Wumpus)) |
+| **02** | ✅ | **El Mundo de Wumpus** | [📁 Ver Tarea](https://github.com/y1anZz/Inteligencia-Artificial/tree/main/Ej_1-Wumpus) |
 | **03** | ⏳ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_03) |
 | **04** | ⏳ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_04) |
 
