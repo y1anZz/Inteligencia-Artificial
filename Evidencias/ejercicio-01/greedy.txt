@@ -1,0 +1,23 @@
+Comando:
+python 03_greedy_best_first_search.py --from-city Timisoara --to Bucharest
+
+Algorithm: Greedy best-first search
+Problem:   Timisoara -> Bucharest
+Heuristic: straight-line distance to Bucharest (AIMA table)
+Status:    success
+Path:      Timisoara -> Lugoj -> Mehadia -> Drobeta -> Craiova -> Pitesti -> Bucharest
+Depth:     6 roads
+Cost:      615 km
+
+  city                  g     h     f
+  Timisoara                0   329   329
+  Lugoj                  111   244   355
+  Mehadia                181   241   422
+  Drobeta                256   242   498
+  Craiova                376   160   536
+  Pitesti                514   100   614
+  Bucharest              615     0   615
+
+Expanded:  6 nodes
+Generated: 15 nodes
+Frontier:  max size 3
