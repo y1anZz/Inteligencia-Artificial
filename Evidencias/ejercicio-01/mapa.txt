@@ -1,7 +1,0 @@
-Comando:
-python 01_romania_map.py --from-city Timisoara
-
-Romania road map (AIMA Figure 3.2)
-Cities: 20   Roads: 23
-
-  Timisoara: Arad 118 km, Lugoj 111 km
