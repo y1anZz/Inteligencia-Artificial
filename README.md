@@ -25,6 +25,9 @@
 | **02** | ✅ | **El Mundo de Wumpus** | [📁 Ver Tarea](https://github.com/y1anZz/Inteligencia-Artificial/tree/main/Ej_1-Wumpus) |
 | **03** | ⏳ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_03) |
 | **04** | ⏳ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_04) |
+| **05** | ⏳ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_05) |
+| **06** | ⏳ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_06) |
+| **07** | ⏳ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_07) |
 
 </div>
 
