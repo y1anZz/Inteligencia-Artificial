@@ -23,9 +23,9 @@
 | :---: | :---: | :--- | :---: |
 | **01** | ✅ | **Aplicaciones de IA que uso o he usado** | [📁 Ver Tarea](https://github.com/y1anZz/Inteligencia-Artificial/blob/2ac7bdbb0cea505d7d27ec3ec1fcb2280c83205b/T1-IA-IPV.pdf) |
 | **02** | ✅ | **El Mundo de Wumpus** | [📁 Ver Tarea](https://github.com/y1anZz/Inteligencia-Artificial/tree/main/Ej_1-Wumpus) |
-| **03** | ⏳ | *Próxima tarea aquí* | [📁 Ver Tarea](https://github.com/y1anZz/Inteligencia-Artificial/blob/main/an_lisis_peas_de_agentes_inteligentes.md) |
-| **04** | ⏳ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_04) |
-| **05** | ⏳ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_05) |
+| **03** | ✅ | **Descripción PEAS de agentes inteligentes** | [📁 Ver Tarea](https://github.com/y1anZz/Inteligencia-Artificial/blob/main/an_lisis_peas_de_agentes_inteligentes.md) |
+| **04** | ✅ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_04) |
+| **05** | ✅ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_05) |
 | **06** | ⏳ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_06) |
 | **07** | ⏳ | *Próxima tarea aquí* | [📁 Pendiente](./Tareas/Tarea_07) |
 
