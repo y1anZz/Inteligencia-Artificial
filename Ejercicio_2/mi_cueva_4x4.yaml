@@ -1,0 +1,29 @@
+## Ian Paredes Vázquez
+## LIC - FMAT
+## Ejercicio de Agentes Inteligentes
+
+grid:
+  width: 4
+  height: 4
+
+agent:
+  start: [1, 1]
+  direction: east
+  arrows: 1
+
+wumpus: [4, 2]
+
+pits:
+  - [3, 1]
+  - [3, 4]
+  - [1, 4]
+
+gold: [2, 3]
+
+scoring:
+  gold: 1000
+  death: -1000
+  step: -1
+  shoot: -10
+
+max_steps: 200
