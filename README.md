@@ -37,30 +37,6 @@
 
 </div>
 
-## 🗺️ Ruta de aprendizaje
-
-```mermaid
-flowchart LR
-    subgraph F["🧭 Fundamentos y agentes"]
-        E1["01 · Aplicaciones de IA"] --> E2["02 · Mundo de Wumpus"] --> E3["03 · Análisis PEAS"]
-    end
-    subgraph B["🔍 Búsqueda"]
-        E4["04 · Búsqueda no informada"] --> E5["05 · Greedy y A*"]
-    end
-    subgraph M["🧠 Aprendizaje automático"]
-        E6["06 · Keras MLP"] --> E7["07 · K-Medias"] --> E8["08 · Próximamente"]
-    end
-    E3 --> E4
-    E5 --> E6
-    classDef done fill:#00529B,stroke:#6A0DAD,color:#ffffff,stroke-width:2px
-    classDef todo fill:#f5f5f5,stroke:#6A0DAD,color:#333333,stroke-dasharray:5 5
-    class E1,E2,E3,E4,E5,E6,E7 done
-    class E8 todo
-    style F fill:#eef4fb,stroke:#00529B
-    style B fill:#f4eefb,stroke:#6A0DAD
-    style M fill:#eef4fb,stroke:#00529B
-```
-
 ## 📚 Índice de ejercicios
 
 <div align="center">
