@@ -253,7 +253,7 @@
 | [`biblioteca.yaml`](./Ejercicio_9/biblioteca.yaml) | Base de conocimiento con los hechos y cuatro reglas: `R_miembro_est`, `R_miembro_prof`, `R_acceso` y `R_beca`. |
 | [`solucion.py`](./Ejercicio_9/solucion.py) | Motor de inferencia en Python con unificación de átomos, encadenamiento hacia adelante (con la traza de átomos deducidos) y encadenamiento hacia atrás (con la traza de la búsqueda). |
 | [`reporteRL.pdf`](./Ejercicio_9/reporteRL.pdf) | Reporte de una página con la traza de cada consulta y respuestas sobre el orden de evaluación de las reglas, los átomos deducidos y el efecto de añadir `TieneCredencial(Luis)`. |
-| `Captura de pantalla 2026-11-03 021733.png`, `Captura de pantalla 2026-11-03 021745.png` | Capturas de la terminal con la salida del programa para las tres consultas, en ambos encadenamientos. |
+| `Captura de pantalla..png`, `Captura de pantalla.png` | Capturas de la terminal con la salida del programa para las tres consultas, en ambos encadenamientos. |
 
 <p align="right"><a href="#top">⬆️ Volver arriba</a></p>
 
@@ -291,10 +291,6 @@
 ├── 📁 Ejercicio_4/   ➜ Búsqueda no informada (BFS, DFS, UCS, DLS, IDS)
 ├── 📁 Ejercicio_5/   ➜ Búsqueda informada (Greedy y A*)
 ├── 📁 Ejercicio_6/   ➜ Perceptrón multicapa: manual y con Keras
-│   ├── 📁 Notebooks/    ➜ Notebooks 04 (manual) y 05 (Keras)
-│   ├── 📁 Graficas/     ➜ Curvas de error y diagramas de las redes
-│   ├── 📁 Evidencias/   ➜ Capturas de Google Colab
-│   └── 📄 ejercicio-01-reporte.md
 ├── 📁 Ejercicio_7/   ➜ K-Medias (notebook y gráficas)
 ├── 📁 Ejercicio_8/   ➜ Q-Learning en Cliff Walking (reporte, script y CSV)
 ├── 📁 Ejercicio_9/   ➜ Encadenamiento hacia adelante y hacia atrás (YAML, script, reporte)
