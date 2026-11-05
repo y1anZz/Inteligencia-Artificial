@@ -4,8 +4,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=00529B&height=230&section=header&text=Inteligencia%20Artificial&fontSize=56&fontAlignY=38&desc=Agentes%20%7C%20B%C3%BAsqueda%20%7C%20Redes%20Neuronales%20%7C%20Clustering&descAlignY=62&descSize=20&animation=twinkling&fontColor=ffffff" width="100%" alt="Banner Inteligencia Artificial" />
 
-<a href="https://github.com/DenverCoder1/readme-typing-svg">
-</a>
 
 <br>
 
@@ -38,7 +36,6 @@
 <img src="https://img.shields.io/badge/Encadenamiento-00529B?style=flat-square" alt="Encadenamiento" />
 
 </div>
-
 
 ## 📚 Índice de ejercicios
 
@@ -175,17 +172,24 @@
 
 <a id="ejercicio-06"></a>
 
-### 🧠 Ejercicio 06 · Perceptrón multicapa con Keras (Iris)
+### 🧠 Ejercicio 06 · Perceptrón multicapa: manual y con Keras (Iris)
 
 > 📁 **Carpeta:** [`Ejercicio_6`](./Ejercicio_6) &nbsp;|&nbsp; 🏷️ **Área:** Aprendizaje automático &nbsp;|&nbsp; ✅ **Estado:** Completado
 
-**🎯 ¿De qué trata?** Implementa una **red neuronal densa (perceptrón multicapa)** con Keras y TensorFlow para clasificar las tres especies del dataset **Iris** (setosa, versicolor y virginica). Usa codificación *one-hot* en la salida, activación sigmoide, error cuadrático medio (MSE), optimizador SGD con tasa de aprendizaje 0.03 y 500 épocas. Como parte del ejercicio 01 se agregan dos capas ocultas más (topología 4 × 3 × 3 × 3 × 3) y se compara su curva de pérdida con la red original.
+**🎯 ¿De qué trata?** Implementa un **perceptrón multicapa** para clasificar las tres especies del dataset **Iris** (setosa, versicolor y virginica) de dos formas: a mano, con **numpy** y backpropagation escrito desde cero, y con **Keras/TensorFlow**. Se usan codificación *one-hot* en la salida, activación sigmoide, error cuadrático medio (MSE), SGD con tasa de aprendizaje 0.03 y 500 épocas. Se compara la red original `4 × 3 × 3` con una red profunda `4 × 3 × 3 × 3 × 3`, y al final se presenta una versión optimizada con estandarización, ReLU, softmax y Adam.
+
+> [!TIP]
+> Más capas no garantizan menor pérdida. En la implementación manual, la red profunda termina con un error de 0.669, frente a 0.058 de la red original; el reporte atribuye esto a las sigmoides apiladas, que pueden producir gradientes pequeños. La versión optimizada alcanza una pérdida final de 0.000035 y 100 % de exactitud.
 
 **📦 ¿Qué contiene la carpeta?**
 
 | Archivo | Descripción |
 |:---|:---|
-| [`05 Keras - multilayer perceptron - iris - ejercicio-01.ipynb`](./Ejercicio_6/05%20Keras%20-%20multilayer%20perceptron%20-%20iris%20-%20ejercicio-01.ipynb) | Notebook de Jupyter con la carga de datos, la construcción y entrenamiento de la red, las gráficas de pérdida, una predicción de ejemplo y la comparación con la red profunda. |
+| [`04 Multilayer perceptron - ejercicio-01.ipynb`](./Ejercicio_6/Notebooks/04%20Multilayer%20perceptron%20-%20ejercicio-01.ipynb) | Implementación manual en numpy: inicialización de pesos, propagación hacia adelante, backpropagation y curvas de error de la red `4 × 3 × 3`, de la red profunda y de la versión optimizada. |
+| [`05 Keras - multilayer perceptron - iris - ejercicio-01.ipynb`](./Ejercicio_6/Notebooks/05%20Keras%20-%20multilayer%20perceptron%20-%20iris%20-%20ejercicio-01.ipynb) | Versión con Keras: modelo `Sequential` de 4 × 3 × 3, entrenamiento con SGD y MSE, predicción de ejemplo y comparación con la red profunda. |
+| [`ejercicio-01-reporte.md`](./Ejercicio_6/ejercicio-01-reporte.md) | Reporte del ejercicio: configuración común, implementación manual y con Keras, y análisis de por qué la profundidad no mejora la pérdida en este caso. |
+| [`Graficas/`](./Ejercicio_6/Graficas) | Seis gráficas: `04MP - grap.png` (error de la red manual), `04MP-RedProfunda.png` (red profunda manual), `VersOptimiz-04mp.png` (versión optimizada), `05mp-RedOrig.png`, `05mp-RedProfunda.png` y `05mp-Perd&Exac.png` (curvas de Keras). |
+| [`Evidencias/`](./Ejercicio_6/Evidencias) | Capturas de Google Colab donde se ejecutaron ambas notebooks: `Colab_Evid.png` (notebook 04) y `Colab-Evidencia.png` (notebook 05). |
 
 <p align="right"><a href="#top">⬆️ Volver arriba</a></p>
 
@@ -255,8 +259,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=6A0DAD&height=6" width="100%" alt="divisor" />
 
-</div>
-
 ## 🛠️ Herramientas y tecnologías
 
 <div align="center">
@@ -288,7 +290,11 @@
 ├── 📁 Ejercicio_3/   ➜ Análisis PEAS (Markdown)
 ├── 📁 Ejercicio_4/   ➜ Búsqueda no informada (BFS, DFS, UCS, DLS, IDS)
 ├── 📁 Ejercicio_5/   ➜ Búsqueda informada (Greedy y A*)
-├── 📁 Ejercicio_6/   ➜ Perceptrón multicapa con Keras (notebook)
+├── 📁 Ejercicio_6/   ➜ Perceptrón multicapa: manual y con Keras
+│   ├── 📁 Notebooks/    ➜ Notebooks 04 (manual) y 05 (Keras)
+│   ├── 📁 Graficas/     ➜ Curvas de error y diagramas de las redes
+│   ├── 📁 Evidencias/   ➜ Capturas de Google Colab
+│   └── 📄 ejercicio-01-reporte.md
 ├── 📁 Ejercicio_7/   ➜ K-Medias (notebook y gráficas)
 ├── 📁 Ejercicio_8/   ➜ Q-Learning en Cliff Walking (reporte, script y CSV)
 ├── 📁 Ejercicio_9/   ➜ Encadenamiento hacia adelante y hacia atrás (YAML, script, reporte)
