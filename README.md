@@ -11,7 +11,7 @@
 
 <img src="https://img.shields.io/badge/UADY_FMAT-00529B?style=for-the-badge" alt="UADY FMAT" />
 <img src="https://img.shields.io/badge/Ingeniería_en_Computación-6A0DAD?style=for-the-badge" alt="Ingeniería en Computación" />
-<img src="https://img.shields.io/badge/Progreso-7%2F8_completados-00529B?style=for-the-badge" alt="Progreso 7 de 8" />
+<img src="https://img.shields.io/badge/Progreso-9%2F9_completados-00529B?style=for-the-badge" alt="Progreso 9 de 9" />
 <img src="https://img.shields.io/badge/Estado-En_progreso-6A0DAD?style=for-the-badge" alt="Estado en progreso" />
 
 <br><br>
@@ -23,7 +23,7 @@
 ## 📖 Sobre este repositorio
 
 > [!NOTE]
-> Aquí se concentran las prácticas de **Inteligencia Artificial** de la Ingeniería en Computación (UADY · FMAT). Cada carpeta `Ejercicio_N` corresponde a una tarea, y este README las presenta en orden numérico, del 1 al 8.
+> Aquí se concentran las prácticas de **Inteligencia Artificial** de la Ingeniería en Computación (UADY · FMAT). Cada carpeta `Ejercicio_N` corresponde a una tarea, y este README las presenta en orden numérico, del 1 al 9.
 
 <div align="center">
 
@@ -34,8 +34,11 @@
 <img src="https://img.shields.io/badge/Heurísticas-00529B?style=flat-square" alt="Heurísticas" />
 <img src="https://img.shields.io/badge/Redes_Neuronales-6A0DAD?style=flat-square" alt="Redes Neuronales" />
 <img src="https://img.shields.io/badge/Clustering-00529B?style=flat-square" alt="Clustering" />
+<img src="https://img.shields.io/badge/Q--Learning-6A0DAD?style=flat-square" alt="Q-Learning" />
+<img src="https://img.shields.io/badge/Encadenamiento-00529B?style=flat-square" alt="Encadenamiento" />
 
 </div>
+
 
 ## 📚 Índice de ejercicios
 
@@ -50,7 +53,8 @@
 | **05** | [Búsqueda informada: Greedy vs A*](#ejercicio-05) | 🔍 Búsqueda | ✅ | [`Ejercicio_5`](./Ejercicio_5) |
 | **06** | [Perceptrón multicapa con Keras (Iris)](#ejercicio-06) | 🧠 ML | ✅ | [`Ejercicio_6`](./Ejercicio_6) |
 | **07** | [Agrupamiento con K-Medias](#ejercicio-07) | 🧠 ML | ✅ | [`Ejercicio_7`](./Ejercicio_7) |
-| **08** | Próximo ejercicio | 🚧 | ⏳ | *Carpeta vacía* |
+| **08** | [Q-Learning en Cliff Walking](#ejercicio-08) | 🎮 Refuerzo | ✅ | [`Ejercicio_8`](./Ejercicio_8) |
+| **09** | [Encadenamiento hacia adelante y hacia atrás](#ejercicio-09) | 🧩 Razonamiento | ✅ | [`Ejercicio_9`](./Ejercicio_9) |
 
 </div>
 
@@ -208,15 +212,50 @@
 
 <a id="ejercicio-08"></a>
 
-### 🚧 Ejercicio 08 · Próximo ejercicio
+### 🎮 Ejercicio 08 · Q-Learning en Cliff Walking
 
-> 📁 **Carpeta:** `Ejercicio_8` &nbsp;|&nbsp; ⏳ **Estado:** Pendiente
+> 📁 **Carpeta:** [`Ejercicio_8`](./Ejercicio_8) &nbsp;|&nbsp; 🏷️ **Área:** Aprendizaje por refuerzo &nbsp;|&nbsp; ✅ **Estado:** Completado
 
-**🎯 ¿De qué trata?** Aún no tiene contenido. La carpeta está reservada para la siguiente tarea y se documentará aquí cuando tenga entregables.
+**🎯 ¿De qué trata?** Implementa **Q-learning**, un algoritmo de aprendizaje por refuerzo, en el entorno **Cliff Walking**: una cuadrícula de 4 × 12 en la que el agente parte de la esquina inferior izquierda y debe llegar a la meta en la esquina inferior derecha. La fila inferior es un precipicio: cada movimiento cuesta -1 y caer cuesta -100, con regreso al inicio. Se usan α = 0.5, γ = 1.0, ε = 0.1 y 500 episodios. El agente aprende por ensayo y error, con una tabla Q de valores por estado y acción.
+
+> [!TIP]
+> Con la política greedy el agente llega a la meta en 13 pasos con un retorno de **-13**, el mejor posible sin caer al precipicio. Las curvas de entrenamiento suelen quedar por debajo de -13 porque con ε = 0.1 se conservan movimientos aleatorios.
+
+**📦 ¿Qué contiene la carpeta?**
+
+| Archivo | Descripción |
+|:---|:---|
+| [`Reporte_Q.pdf`](./Ejercicio_8/Reporte_Q.pdf) | Reporte de una página con las instrucciones de ejecución y las respuestas al cuestionario: por qué 13 pasos es el camino óptimo, por qué la curva de entrenamiento queda por debajo de -13 y cómo se actualiza Q al caer del precipicio. |
+| [`solucionQ.py`](./Ejercicio_8/solucionQ.py) | Implementación de Q-learning con la biblioteca estándar de Python: tabla Q, selección ε-greedy, transiciones del entorno y evaluación final con política greedy. |
+| [`recompensas.csv`](./Ejercicio_8/recompensas.csv) | Recompensa de cada episodio y su media móvil de 10 episodios, para graficar la curva de aprendizaje. |
+
+<p align="right"><a href="#top">⬆️ Volver arriba</a></p>
+
+<a id="ejercicio-09"></a>
+
+### 🧩 Ejercicio 09 · Encadenamiento hacia adelante y hacia atrás
+
+> 📁 **Carpeta:** [`Ejercicio_9`](./Ejercicio_9) &nbsp;|&nbsp; 🏷️ **Área:** Razonamiento &nbsp;|&nbsp; ✅ **Estado:** Completado
+
+**🎯 ¿De qué trata?** Implementa un motor de inferencia sobre una **base de conocimiento** de una biblioteca, definida en YAML con hechos (estudiantes, una profesora, credenciales y horario nocturno) y reglas. Compara dos estrategias de razonamiento: el **encadenamiento hacia adelante**, guiado por los datos, que deduce todo lo que se puede a partir de los hechos; y el **encadenamiento hacia atrás**, guiado por la meta, que parte de la consulta y busca cómo probarla. Se evalúa `AccesoNoche` para Ana, Luis y Marta.
+
+> [!TIP]
+> Ana y Marta obtienen acceso nocturno. Luis no lo obtiene porque es estudiante pero no tiene credencial. Si se añade el hecho `TieneCredencial(Luis)`, su consulta se prueba.
+
+**📦 ¿Qué contiene la carpeta?**
+
+| Archivo | Descripción |
+|:---|:---|
+| [`biblioteca.yaml`](./Ejercicio_9/biblioteca.yaml) | Base de conocimiento con los hechos y cuatro reglas: `R_miembro_est`, `R_miembro_prof`, `R_acceso` y `R_beca`. |
+| [`solucion.py`](./Ejercicio_9/solucion.py) | Motor de inferencia en Python con unificación de átomos, encadenamiento hacia adelante (con la traza de átomos deducidos) y encadenamiento hacia atrás (con la traza de la búsqueda). |
+| [`reporteRL.pdf`](./Ejercicio_9/reporteRL.pdf) | Reporte de una página con la traza de cada consulta y respuestas sobre el orden de evaluación de las reglas, los átomos deducidos y el efecto de añadir `TieneCredencial(Luis)`. |
+| `Captura de pantalla 2026-11-03 021733.png`, `Captura de pantalla 2026-11-03 021745.png` | Capturas de la terminal con la salida del programa para las tres consultas, en ambos encadenamientos. |
 
 <p align="right"><a href="#top">⬆️ Volver arriba</a></p>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=6A0DAD&height=6" width="100%" alt="divisor" />
+
+</div>
 
 ## 🛠️ Herramientas y tecnologías
 
@@ -251,7 +290,8 @@
 ├── 📁 Ejercicio_5/   ➜ Búsqueda informada (Greedy y A*)
 ├── 📁 Ejercicio_6/   ➜ Perceptrón multicapa con Keras (notebook)
 ├── 📁 Ejercicio_7/   ➜ K-Medias (notebook y gráficas)
-├── 📁 Ejercicio_8/   ➜ Próximamente (vacía)
+├── 📁 Ejercicio_8/   ➜ Q-Learning en Cliff Walking (reporte, script y CSV)
+├── 📁 Ejercicio_9/   ➜ Encadenamiento hacia adelante y hacia atrás (YAML, script, reporte)
 └── 📄 README.md
 ```
 
